@@ -31,10 +31,10 @@ pd.set_option('display.max_columns', 100)
 pd.set_option('display.width', 1000)
 
 bot_name = 'LHH-stock-bot'
-bot = telegram.Bot(token = '1678074611:AAFCLoe6yV2LammSMsJKIKmspBgWJj8dt9g')
-bot.sendMessage(chat_id = 1141038444, text = "Hello,I'm {}.You can ask me any question about stock!".format(bot_name))
+bot = telegram.Bot(token = '<Your-api-token>')
+bot.sendMessage(chat_id = <Your chat id>, text = "Hello,I'm {}.You can ask me any question about stock!".format(bot_name))
 
-updater = Updater(token = '1678074611:AAFCLoe6yV2LammSMsJKIKmspBgWJj8dt9g', use_context = True)
+updater = Updater(token = '<Your-api-token>', use_context = True)
 dispatcher = updater.dispatcher
 
 CHOOSING, TYPING_REPLY, TYPING_CHOICE = range(3)
@@ -725,8 +725,8 @@ def chat(update, context):
 
 def second_thread(bot):
     time.sleep(10)
-    bot.sendMessage(chat_id = 1141038444, text = "Done!")
-    updater2 = Updater(token = '1678074611:AAFCLoe6yV2LammSMsJKIKmspBgWJj8dt9g', use_context = True)
+    bot.sendMessage(chat_id = <Your chat id>, text = "Done!")
+    updater2 = Updater(token = '<Your-api-token>', use_context = True)
     dispatcher2 = updater2.dispatcher
     dispatcher2.add_handler(conv_handler)
     updater2.start_polling()
