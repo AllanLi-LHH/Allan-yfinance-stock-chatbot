@@ -6,7 +6,7 @@ https://user-images.githubusercontent.com/31875506/126862796-860b718f-a4fe-4122-
 
 ## Virtual environment
 
-1. python==3.6.12 | rasa==0.15.1 | spacy==2.3.2 | tensorflow==2.1.1
+1. python==3.6.12 | rasa==1.10.12 | spacy==2.3.2 | tensorflow==2.1.1 | rasa-nlu==0.15.1
 
 2. Install the Anaconda and create the virtual environment.
 
@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/31875506/126862796-860b718f-a4fe-4122-
   
   pipeline: "spacy_sklearn"
   ```
-Keeping in mind that you should install the English spacy model after finishing the spacy installation. Using the following commands:
+4. Keeping in mind that you should install the English spacy model after finishing the spacy installation. Using the following commands:
   ```python
   pip install -U spacy
   python -m spacy.en.download
