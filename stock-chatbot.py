@@ -667,7 +667,7 @@ def handle(cur_intent, cur_org_list, cur_entities):  # slot filling
 
 
 verifying_flag = 1  # Verification code function switch
-chatter_flag = 1
+chatter_flag = -99  # Small talk mode switch
 graph_class = 0
 
 def chat(update, context):
@@ -707,15 +707,15 @@ def chat(update, context):
         graph_class = 2
         handle(intent, org_list, entities)
     else:
-        cur_intent, cur_org_list, cur_entities = get_info(message)  # 获取当前消息的意图和实体字典
+        cur_intent, cur_org_list, cur_entities = get_info(message)  # get intent, entities...
 
         if cur_intent == 'greet' or cur_intent == 'affirm' or cur_intent == 'goodbye' or cur_intent == 'name_query' or cur_intent == 'time_query':
             chatter_flag += 1
             context.bot.sendMessage(chat_id = chat_id, text = random.choice(intent_responses[cur_intent]))
         else:
 
-            handle(cur_intent, cur_org_list, cur_entities)  # 处理消息意图和实体
-        if chatter_flag > 8:
+            handle(cur_intent, cur_org_list, cur_entities)  # handle the analytical results
+        if chatter_flag > 8:  
             context.bot.send_message(chat_id = update.effective_chat.id,
                                      text = 'switch to High-LEVEL conversation model, please wait about 10 seconds..........')
             t = threading.Thread(target = second_thread(bot))
