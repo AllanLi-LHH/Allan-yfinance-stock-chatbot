@@ -38,7 +38,7 @@ https://user-images.githubusercontent.com/31875506/126862796-860b718f-a4fe-4122-
 
 ## Reference materials
 
-[Python-telegram-bot document](https://pypi.org/project/python-telegram-bot/3.4/)
+[Python-telegram-bot document](https://pypi.org/project/python-telegram-bot/12.8/)
 
 [Rasa version 1.x document](https://legacy-docs-v1.rasa.com/)
 
