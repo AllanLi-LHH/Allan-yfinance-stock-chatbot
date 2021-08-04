@@ -1,5 +1,5 @@
 # Telegram-Yfinance-Stock-Chatbot
-This is a simple RASA-NLU based financial stock chatbot. It can finish simple intent recognition, entity recognition, extraction, and slot filling tasks. Users can have small talks and multiple dialogues based on context with the chatbot.
+This is a simple RASA-NLU based financial stock chatbot. It can finish simple intent recognition, entity recognition and extraction, and slot filling tasks. Users can have small talks and multiple dialogues based on context with the chatbot.
 
 ## **Demo-video**
 https://user-images.githubusercontent.com/31875506/126862796-860b718f-a4fe-4122-9533-e76bc2fbf58c.mp4
