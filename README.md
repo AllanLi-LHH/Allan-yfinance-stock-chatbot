@@ -1,5 +1,5 @@
 # Telegram-Yfinance-Stock-Chatbot
-This is a simple RASA-NLU based financial stock chatbot. It can finish simple intent recognition, entity recognition and extraction, and slot filling tasks. Users can have small talk and multiple dialogues based on context with the chatbot.
+This is a simple RASA-NLU based financial stock chatbot. It can finish simple intent recognition, entity recognition, extraction, and slot filling tasks. Users can have small talks and multiple dialogues based on context with the chatbot.
 
 ## **Demo-video**
 https://user-images.githubusercontent.com/31875506/126862796-860b718f-a4fe-4122-9533-e76bc2fbf58c.mp4
@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/31875506/126862796-860b718f-a4fe-4122-
 
 1. For people in some regions, a fast VPN with American servers is recommended.
 
-2. The chatbot uses the Telegram as its interface, you need to create a bot of your own through [BotFather](https://telegram.me/botfather) and get a API token. Then you should replace my token in the py file with the unique API token you applied for and change the chat id. Note that chat id and API token are two different things, check [Telegram APIs](https://core.telegram.org/api) or [stack overflow](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id) for more details.
+2. The chatbot uses the Telegram as its interface, you need to create a bot of your own through [BotFather](https://telegram.me/botfather) and get an API token. Then you should replace my token in the py file with the unique API token you applied from the BotFather and change the chat id. Noting that the chat id and API token are two different things, please check [Telegram APIs](https://core.telegram.org/api) or [stack overflow](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id) for more details.
 
 3. Here is the configuration of RASA Pipeline, you can change it based on your need. [Check here and learn more about Pipeline](https://legacy-docs-v1.rasa.com/nlu/choosing-a-pipeline/)
   ```python
